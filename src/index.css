@@ -1,0 +1,47 @@
+@import "tailwindcss";
+body {
+  background-color: black;
+}
+
+.custom-clip-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+}
+
+.neon-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 13rem;
+  background-color: black;
+  border-bottom-right-radius: 40px; /* Increased from 10px to 40px */
+  z-index: 1;
+}
+
+.neon-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 70px;
+  width: 13rem;
+  background-color: black;
+  border-top-left-radius: 40px; /* Increased from 10px to 40px */
+  z-index: 1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
