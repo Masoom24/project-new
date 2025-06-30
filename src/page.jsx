@@ -35,7 +35,7 @@ const ProductPage = () => {
   }, []);
   return (
     <div
-      className="bg-black text-white min-h-screen font-sans min-w-screen container"
+      className="bg-black text-white min-h-screen font-sans min-w-screen container overflow-hidden"
       style={{ minWidth: isMobile ? "200vw" : "100vw" }}
     >
       <div className="bg-black text-black min-h-screen font-sans mt-5">
