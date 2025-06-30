@@ -115,7 +115,7 @@ const ProductPage = () => {
           <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-10">
             <h2 className="text-[38px] md:text-[44px] leading-tight font-bold">
               Something has <br /> you covered{" "}
-              <span className="inline-block">🍳</span>
+              <span className="inline-block"></span>
             </h2>
             <p className="text-gray-300 text-[16px] leading-6 max-w-md">
               Hungry? Too tired to cook? Have friends over, or <br />
