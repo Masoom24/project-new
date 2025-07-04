@@ -1,10 +1,12 @@
 .block {
   position: absolute;
-  width: 15%;
+  width: 15%; /* Good for big screens, but too big for mobile */
+  max-width: 120px; /* Prevents overflow */
   height: 70px;
   background: black;
   z-index: 2;
 }
+
 
 .block::before,
 .block::after {
@@ -105,4 +107,10 @@
   content: "▶";
   color: #9aff00;
   font-size: 12px;
+}
+@media (max-width: 768px) {
+  .block {
+    width: 20%;
+    height: 50px;
+  }
 }
