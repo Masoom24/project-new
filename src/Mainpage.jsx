@@ -61,7 +61,7 @@ const CornerBlocks = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex justify-end w-full px-19 -mt-14 z-30">
+      <div className="flex justify-end w-full px-13 -mt-14 z-30">
         <div className="bg-white border border-sky-300 rounded-full px-6 py-4 flex items-center gap-5">
           <a href="#">@</a>
           <a href="#">𝕏</a>
