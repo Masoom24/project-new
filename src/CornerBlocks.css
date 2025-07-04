@@ -1,0 +1,108 @@
+.block {
+  position: absolute;
+  width: 15%;
+  height: 70px;
+  background: black;
+  z-index: 2;
+}
+
+.block::before,
+.block::after {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border-color: transparent;
+  background: radial-gradient(
+    circle 24px at top left,
+    transparent 98%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+/* Bottom-right block */
+.block-br {
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 24px;
+}
+
+.block-br::before {
+  bottom: 0;
+  left: -24px;
+}
+
+.block-br::after {
+  top: -24px;
+  right: 0;
+}
+
+/* Top-left block */
+.block-tl {
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 24px;
+}
+
+.block-tl::before {
+  top: 0;
+  right: -24px;
+  transform: rotate(180deg);
+}
+
+.block-tl::after {
+  bottom: -24px;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+/* Top-right block */
+.block-tr {
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 24px;
+}
+
+.block-tr::before {
+  top: 0;
+  left: -24px;
+  transform: rotate(270deg);
+}
+
+.block-tr::after {
+  bottom: -24px;
+  right: 0;
+  transform: rotate(270deg);
+}
+
+/* Buttons */
+.btn {
+  color: white;
+
+  padding: 10px 26px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn:hover {
+  background: #9aff00;
+  color: black;
+}
+
+.connect-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  margin-right: -55px;
+}
+
+.connect-btn::before {
+  content: "▶";
+  color: #9aff00;
+  font-size: 12px;
+}
