@@ -11,15 +11,13 @@ const CornerBlocks = () => {
         </button>
       </header>
 
-      <div className="relative w-[1230px] h-[500px] bg-lime-400 rounded-[20px] ml-5">
-        {/* Corner blocks */}
+<div className="relative w-[95%] sm:w-[90%] md:w-[95%] lg:w-[1230px] h-auto md:h-[500px] bg-lime-400 rounded-[20px] ml-2 md:ml-5 mt-4 px-3">        {/* Corner blocks */}
         <div className="block block-br"></div>
         <div className="block block-tl"></div>
         <div className="block block-tr"></div>
 
         {/* Navbar */}
-        <nav className="bg-lime-400 border border-black rounded-full py-2 px-4 flex gap-2 justify-center mx-[214px] my-4">
-          <a
+<nav className="bg-lime-400 border border-black rounded-full py-2 px-4 flex flex-wrap gap-2 justify-center mx-auto md:mx-[214px] my-4">          <a
             href="#"
             className="px-6 py-3 text-black no-underline rounded-full font-medium text-base hover:bg-black/10"
           >
@@ -46,8 +44,7 @@ const CornerBlocks = () => {
         </nav>
 
         {/* Description */}
-        <div className="max-w-xl mt-48 px-2 text-sm leading-relaxed">
-          <h3 className=" items-center gap-2 text-lg font-semibold mb-10">
+<div className="max-w-xl mt-10 md:mt-48 px-2 text-sm md:text-base leading-relaxed">          <h3 className=" items-center gap-2 text-lg font-semibold mb-10">
             <span className="mr-1">➤</span> Contact us
             <hr className="flex-grow ml-2 border-t border-black" />
           </h3>
@@ -61,7 +58,10 @@ const CornerBlocks = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex justify-end w-full px-11 -mt-14 z-30">
+    <div className="flex justify-end w-full px-6 md:px-11 -mt-10 md:-mt-14 z-30">
+
+
+        
         <div className="bg-white border border-sky-300 rounded-full px-6 py-4 flex items-center gap-5">
           <a href="#">@</a>
           <a href="#">𝕏</a>
