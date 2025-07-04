@@ -1,11 +1,13 @@
 import "./App.css";
-import ProductPage from "./page";
+// import ProductPage from "./page";
+import CornerBlocks from "./Mainpage";
+
 
 function App() {
   return (
     <>
       <div>
-        <ProductPage />
+        <CornerBlocks />
       </div>
     </>
   );
